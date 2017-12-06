@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Jarvis.iml" filepath="$PROJECT_DIR$/Jarvis.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jarvis/jarvis.iml" filepath="$PROJECT_DIR$/jarvis/jarvis.iml" />
     </modules>
   </component>
 </project>

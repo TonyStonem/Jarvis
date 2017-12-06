@@ -1,4 +1,4 @@
-package app.xjw.jarvis;
+package app.xjw.sample;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
