@@ -1,4 +1,4 @@
-package app.xjw.jarvis.utils;
+package app.xjw.jarvis;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,15 +10,15 @@ import dalvik.system.DexClassLoader;
  * Email 1521975316@qq.com
  */
 
-public class JXClassLoader extends DexClassLoader {
+public class JIClassLoader extends DexClassLoader {
 
-    private static final Map<String, JXClassLoader> loaders = new HashMap<>();
+    private static final Map<String, JIClassLoader> loaders = new HashMap<>();
 
     private final String dexPath;
     private final String outputPath;
     private final ClassLoader parent;
 
-    public JXClassLoader(String dexPath, String optimizedDirectory,
+    public JIClassLoader(String dexPath, String optimizedDirectory,
                          String librarySearchPath, ClassLoader parent) {
         super(dexPath, optimizedDirectory, librarySearchPath, parent);
         this.dexPath = dexPath;
@@ -26,10 +26,10 @@ public class JXClassLoader extends DexClassLoader {
         this.parent = parent;
     }
 
-    public JXClassLoader get() {
-        JXClassLoader loader = loaders.get(dexPath);
+    public JIClassLoader get() {
+        JIClassLoader loader = loaders.get(dexPath);
         if (loader != null) return loader;
-        loader = new JXClassLoader(dexPath, outputPath, null, parent);
+        loader = new JIClassLoader(dexPath, outputPath, null, parent);
         loaders.put(dexPath, loader);
         return loader;
     }

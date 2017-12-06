@@ -11,7 +11,7 @@ import dalvik.system.DexClassLoader;
  * Email 1521975316@qq.com
  */
 
-public class JXPluginBean {
+public class JIPluginBean {
 
     private String packageName;
     private String path;
@@ -77,7 +77,7 @@ public class JXPluginBean {
         this.assetManager = assetManager;
     }
 
-    public JXPluginBean(String packageName, String path, DexClassLoader classLoader, Resources resources, String defultActivity, PackageInfo packageInfo, AssetManager assetManager) {
+    public JIPluginBean(String packageName, String path, DexClassLoader classLoader, Resources resources, String defultActivity, PackageInfo packageInfo, AssetManager assetManager) {
         this.packageName = packageName;
         this.path = path;
         this.classLoader = classLoader;
