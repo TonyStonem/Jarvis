@@ -10,4 +10,6 @@ public class JIAll {
     public static final int IF_INTERNAL = 0;
     public static final int IF_EXTERNAL = 1;
 
+    public static final String IF = "if_from";
+
 }
